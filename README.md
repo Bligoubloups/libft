@@ -1,6 +1,6 @@
 # libft
 
-#Memory
+# Memory
 * **bzero**: ```void ft_bzero(void *s, size_t n);```  
 writes n zeroed bytes to the string s.  
 * **memset**: ```void *ft_memset(void *b, int c, size_t len);```  
@@ -21,7 +21,7 @@ Alloue et retourne une zone de mémoire initialisée à 0. Si l’allocation éc
 * **memdel**: ```void ft_memdel(void **ap);```  
 Free un pointeur puis le met à NULL.
 
-#Strings
+# Strings
 * **strlen**: ```size_t ft_strlen(const char *s);```  
 computes the length of the string s.  
 * **strdup**: ```char *ft_strdup(const char *s1);```  
@@ -90,7 +90,7 @@ Affiche la chaine s sur la sortie standard suivi d’un ’\n’.
 * **str_tolower**: ```char *ft_str_tolower(char *str);```
 * **str_toupper**: ```char *ft_str_toupper(char *str);```
 
-#Char
+# Char
 * **isalpha**: ```int ft_isalpha(int c);```  
 tests for any character for which isupper(3) or islower(3) is true.  
 * **isdigit**: ```int ft_isdigit(int c);```  
@@ -112,17 +112,17 @@ converts an upper-case letter to the corresponding lower-case letter.
 * **putchar**: ```void ft_putchar(char c);```  
 Affiche le caractère c sur la sortie standard.
 
-#Int
+# Int
 * **putnbr**: ```void ft_putnbr(int n);```  
 Affiche l’entier n sur la sortie standard.
 * **itoa**: ```char * ft_itoa(int n);```  
 Alloue et retourne une chaine de caractères représentant l’entier n.
 
-#Base
+# Base
 * **iota_base**: ```char *ft_itoa_base(int nb, char *base);```
 * **atoi_base**: ```int ft_atoi_base(char *nb, char *base);```
 
-#Fd
+# Fd
 * **putchar_fd**: ```void ft_putchar_fd(char c, int fd);```  
 Ecrit le caractère c sur le descripteur de fichier fd.
 * **putstr_fd**: ```void ft_putstr_fd(char const *s, int fd);```  
@@ -133,7 +133,7 @@ Ecrit la chaine s sur le descripteur de fichier fd suivi d’un
 * **putnbr_fd**: ```void ft_putnbr_fd(int n, int fd);```  
 Ecrit l’entier n sur le descripteur de fichier fd.
 
-#List
+# List
 ```
 typedef struct  s_list
 {
