@@ -6,7 +6,7 @@
 /*   By: mleonett <mleonett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 16:34:48 by mleonett          #+#    #+#             */
-/*   Updated: 2018/04/03 16:57:28 by mleonett         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:51:12 by mleonett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,11 @@ char			**ft_strsplit(char const *s, char c)
 	int		nb_words;
 	char	**tab;
 	int		i;
-	int		index;
 
 	if (!s)
 		return (NULL);
 	nb_words = count_words(s, c);
 	i = 0;
-	index = 0;
 	if (!(tab = (char **)malloc(sizeof(char *) * (nb_words + 1))))
 		return (0);
 	tab[nb_words] = 0;

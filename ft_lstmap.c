@@ -6,7 +6,7 @@
 /*   By: mleonett <mleonett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/04 15:54:03 by mleonett          #+#    #+#             */
-/*   Updated: 2018/04/04 15:54:03 by mleonett         ###   ########.fr       */
+/*   Updated: 2018/04/18 14:00:40 by mleonett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 
 	new_list = NULL;
 	begin_list = new_list;
-	while (lst)
+	while (lst && f)
 	{
 		if (!(new_list = f(ft_lstnew(lst->content, lst->content_size))))
 			return (0);

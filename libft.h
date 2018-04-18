@@ -6,7 +6,7 @@
 /*   By: mleonett <mleonett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 16:50:20 by mleonett          #+#    #+#             */
-/*   Updated: 2018/04/06 13:52:00 by mleonett         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:57:48 by mleonett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
-# define SEPARATOR(x) ((9 <= x && x <= 13) || x == ' ')
-# define SPACE(x) (x == ' ' || x == '\n' || x == '\t')
 
 typedef struct		s_list
 {

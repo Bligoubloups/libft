@@ -6,7 +6,7 @@
 /*   By: mleonett <mleonett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 16:34:50 by mleonett          #+#    #+#             */
-/*   Updated: 2018/04/04 16:09:30 by mleonett         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:56:30 by mleonett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ char			*ft_strtrim(char const *s)
 		return ((char *)s);
 	start = 0;
 	end = (unsigned int)ft_strlen(s) - 1;
-	while (SPACE(s[start]))
+	while (s[start] == ' ' || s[start] == '\n' || s[start] == '\t')
 		start++;
-	while (SPACE(s[end]) && end > start)
+	while ((s[end] == ' ' || s[end] == '\n' || s[end] == '\t') && end > start)
 		end--;
 	return (ft_strsub(s, start, end - start + 1));
 }

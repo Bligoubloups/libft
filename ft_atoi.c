@@ -6,7 +6,7 @@
 /*   By: mleonett <mleonett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 16:34:06 by mleonett          #+#    #+#             */
-/*   Updated: 2018/04/03 16:35:33 by mleonett         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:52:11 by mleonett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
-	while (SEPARATOR(str[i]))
+	while ((9 <= str[i] && str[i] <= 13) || str[i] == ' ')
 		i++;
 	if (str[i] == '-')
 		sign = -1;
