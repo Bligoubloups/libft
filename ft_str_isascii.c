@@ -14,7 +14,7 @@ int		ft_str_isascii(char *str)
 {
 	while (*str)
 	{
-		if (!(0 <= *str && *str <= 127))
+		if (!(0 <= *str)) 
 			return (0);
 		str++;
 	}
