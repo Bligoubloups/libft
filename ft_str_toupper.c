@@ -17,7 +17,7 @@ char	*ft_str_toupper(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (!('a' <= str[i] && str[i] <= 'z'))
+		if ('a' <= str[i] && str[i] <= 'z')
 			str[i] = str[i] - 32;
 		i++;
 	}
