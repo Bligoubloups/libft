@@ -17,7 +17,7 @@ char	*ft_str_tolower(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (!('A' <= str[i] && str[i] <= 'Z'))
+		if ('A' <= str[i] && str[i] <= 'Z')
 			str[i] = str[i] + 32;
 		i++;
 	}
